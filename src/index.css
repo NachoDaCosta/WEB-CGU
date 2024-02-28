@@ -20,49 +20,6 @@ header {
   border-radius: 20px;
 }
 
-nav {
-  background-color: #333;
-  color: white;
-  padding: 0.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  
-}
 
-nav ul {
-  display: flex;
-  gap: 40px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-nav li {
-  display: inline;
-  margin-right: 10px;
-}
 
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color:rgb(23, 33, 94);
-  color: white;
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}

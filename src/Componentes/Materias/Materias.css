@@ -1,0 +1,30 @@
+.materias {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+}
+
+.materias h1{
+    font-size: 45px;
+}
+
+.materias img {
+    height: 100px;
+    width: 100px;
+}
+
+.mats {
+    display: flex;
+    gap: 25px;
+}
+
+.materia-info {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-items: center;
+}

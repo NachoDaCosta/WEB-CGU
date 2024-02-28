@@ -1,0 +1,33 @@
+.nosotros-container{
+    background-color: rgb(23, 33, 94);
+    color: white;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-content: center;
+    
+}
+
+.left-column-about{
+    height: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 20% 80%;
+    align-content: center;
+    justify-items: center;
+}
+
+
+
+.us-pic{
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.text{
+    text-align: center;
+    display: flex;
+    width: 80%;
+    text-align: justify;
+    font-size:18px;
+}

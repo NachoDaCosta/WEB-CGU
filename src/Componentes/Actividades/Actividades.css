@@ -1,0 +1,46 @@
+.actividades-container{
+    height: 1200px;
+        background-color:#17215E;
+        display: grid;
+        grid-template-rows: 10% 45% 45%;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        align-items: center;
+}
+
+.title{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    font-size: 50px;
+}
+
+.charla-gnexus{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.charla-pedidos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.video{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.empresa{
+    width: 400px;
+}
+
+.charla-con{
+    height: 100%;
+    align-items: center;
+    display: grid;grid-template-rows: 50% 50%;
+    justify-items: center;
+}

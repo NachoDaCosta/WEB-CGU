@@ -1,4 +1,10 @@
 import "./App.css";
+import Actividades from "./Componentes/Actividades/Aactividades";
+import Contact from "./Componentes/Contact/Contact";
+import Footer from "./Componentes/Footer/Footer";
+import Materias from "./Componentes/Materias/Materias";
+import Nav from "./Componentes/Nav/Nav";
+import Nosotros from "./Componentes/Nosotros/Nosotros";
 
 function App() {
   return (
@@ -11,69 +17,12 @@ function App() {
           <h1>CGU INGENIERÍA</h1>
           <h1>LA FING ESTÁ CAMBIANDO</h1>
         </header>
-
-        <nav>
-          <ul>
-            <li>
-              <a href="#materia1">SOBRE NOSOTROS</a>
-            </li>
-            <li>
-              <a href="#materia2">CONTACTO</a>
-            </li>
-            <li>
-              <a href="#materia1">PREGUNTAS FRECUENTES</a>
-            </li>
-            <li>
-              <a href="#materia2">EVA</a>
-            </li>
-            <li>
-              <a href="#materia2">OPENFING</a>
-            </li>
-          </ul>
-        </nav>
-
-        <main>
-          <section id="materia1">
-            <h2>Materia 1</h2>
-            <p>Descripción de la materia y enlaces a los PDFs:</p>
-            <ul>
-              <li>
-                <a href="pdfs/materia1_tema1.pdf" target="_blank">
-                  Tema 1: Introducción
-                </a>
-              </li>
-              <li>
-                <a href="pdfs/materia1_tema2.pdf" target="_blank">
-                  Tema 2: Fundamentos
-                </a>
-              </li>
-            </ul>
-          </section>
-
-          <section id="materia2">
-            <h2>Materia 2</h2>
-            <p>Descripción de la materia y enlaces a los PDFs:</p>
-            <ul>
-              <li>
-                <a href="pdfs/materia2_tema1.pdf" target="_blank">
-                  Tema 1: Conceptos Básicos
-                </a>
-              </li>
-              <li>
-                <a href="pdfs/materia2_tema2.pdf" target="_blank">
-                  Tema 2: Avanzado
-                </a>
-              </li>
-            </ul>
-          </section>
-        </main>
-
-        <footer>
-          <p>
-            &copy; 2024 Recursos para Estudiantes. Todos los derechos
-            reservados.
-          </p>
-        </footer>
+        <Nav />
+        <Materias />
+        <Nosotros />
+        <Contact />
+        <Actividades />
+        <Footer />
       </body>
     </div>
   );
