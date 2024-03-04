@@ -1,5 +1,5 @@
 nav {
-    background-color:rgb(102, 107, 142);
+    background-color: rgb(102, 107, 142);
     color: white;
     padding: 0.5em;
     display: flex;
@@ -18,11 +18,37 @@ nav ul {
 }
 
 nav li {
-    display: inline;
-    margin-right: 10px;
+    display: inline;;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {   
+            height: 40px;
+            background-color: rgb(102, 107, 142);
+            color: white;
+            display:flex;
+            flex-direction: row;
+            font-size: 11px;
+            justify-items: center;
+        }
+    
+    nav ul {
+        width: 80%;
+        grid-area: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
 }

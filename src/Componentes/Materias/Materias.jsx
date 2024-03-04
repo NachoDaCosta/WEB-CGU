@@ -1,74 +1,106 @@
 import React from "react";
 import "./Materias.css";
+import { useState } from "react";
+import Materias2 from "./Materias_Content";
 
 const Materias = () => {
+  const [infoMateria, setInfoMateria] = useState({
+    nombre: "",
+    detalles: "Haz clic en una materia para ver la información.",
+    creditos: "",
+    horasPorSemana: "",
+    linkClases: "",
+  });
+
+  const mostrarInformacionMateria = (nombreMateria) => {
+    // Simulación de información detallada. Puedes obtener esta información desde una fuente externa.
+    setInfoMateria({
+      nombre: nombreMateria,
+      detalles: `Créditos: ${nombreMateria.length}, Horas por semana: ${
+        nombreMateria.length * 2
+      }, Enlace a clases virtuales: [Enlace]`,
+      creditos: obtenerCreditosMateria(nombreMateria),
+      linkClases: obtenerLinkClasesMateria(nombreMateria),
+    });
+  };
+
+  const obtenerCreditosMateria = (nombreMateria) => {
+    switch (nombreMateria) {
+      case "CDIV":
+        return 13;
+      case "CDIVV":
+        return 13;
+      case "CALCULO VECTORIAL":
+        return 10;
+      default:
+      case "FISICA 1":
+        return 10;
+      case "FISICA 2":
+        return 10;
+      case "GAL 1":
+        return 6;
+      case "GAL 2":
+        return 9;
+      case "MATEMATICA DISCRETA 1":
+        return 9;
+      case "MATEMATICA DISCRETA 2":
+        return 9;
+      case "PROGRAMACION 1":
+        return 10;
+      case "PROGRAMACION 2":
+        return 12;
+      case "MATEMATICA INICIAL":
+        return 4;
+    }
+  };
+
+
+  const obtenerLinkClasesMateria = (nombreMateria) => {
+    // Simulación de información. Puedes ajustar esto según tus necesidades.
+    switch (nombreMateria) {
+      case "CDIV":
+        return "https://open.fing.edu.uy/courses/civ/";
+
+      case "CDIVV":
+        return "https://open.fing.edu.uy/courses/cdivv-2022/";
+
+      case "CALCULO VECTORIAL":
+        return "https://open.fing.edu.uy/courses/calcvec/";
+      case "FISICA 1":
+        return "https://open.fing.edu.uy/courses/f1-2022/";
+
+      case "FISICA 2":
+        return "https://open.fing.edu.uy/courses/f2-2023/";
+
+      case "GAL 1":
+        return "https://open.fing.edu.uy/courses/gal119/";
+      case "GAL 2":
+        return "https://open.fing.edu.uy/courses/gal219/";
+
+      case "MATEMATICA DISCRETA 1":
+        return "https://open.fing.edu.uy/courses/md1-2022/";
+
+      case "MATEMATICA DISCRETA 2":
+        return "https://open.fing.edu.uy/courses/md2/";
+
+      case "PROGRAMACION 1":
+        return "https://open.fing.edu.uy/courses/p1/";
+      case "PROGRAMACION 2":
+        return "https://open.fing.edu.uy/courses/p2-2023/";
+      // ... Agrega enlaces específicos para las demás materias ...
+
+      default:
+        return ``;
+    }
+  };
+
   return (
-    <div className="materias">
-      <h1>Materias</h1>
-
-      <div className="mats">
-        <div className="materia-info">
-          <img src="/imgs/c1.png" alt="" />
-          <span>CDIV</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/c2.png" alt="" />
-          <span>CDIVV</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/c3.png" alt="" />
-          <span>CALCULO VECTORIAL</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/f1.png" alt="" />
-          <span>Fisica 1</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/f2.png" alt="" />
-          <span>Fisica 2</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/g1.png" alt="" />
-          <span>Gal 1</span>
-        </div>
-      </div>
-
-      <div className="mats">
-        <div className="materia-info">
-          <img src="/imgs/G2.png" alt="" />
-          <span>Gal 2</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/m1.png" alt="" />
-          <span>Matematica Discreta 1</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/m2.png" alt="" />
-          <span>Matematica Discreta 2</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/p1.png" alt="" />
-          <span>Programación 1</span>
-        </div>
-
-        <div className="materia-info">
-          <img src="/imgs/p2.png" alt="" />
-          <span>Programación 2</span>
-        </div>
-        <div className="materia-info">
-          <img src="/imgs/mi.png" alt="" />
-          <span>Matematica Inicial</span>
-        </div>
-      </div>
-    </div>
+    <Materias2
+      infoMateria={infoMateria}
+      mostrarInformacionMateria={mostrarInformacionMateria}
+      obtenerCreditosMateria={obtenerCreditosMateria}
+      obtenerLinkClasesMateria={obtenerLinkClasesMateria}
+    />
   );
 };
 

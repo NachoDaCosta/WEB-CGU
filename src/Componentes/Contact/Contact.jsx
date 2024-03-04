@@ -3,7 +3,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container" id="contacto">
-      <h1>Contactanos Ante Cualquier Consulta</h1>
+      <h1>Contactanos</h1>
       <div className="second-row-contact">
         <div className="icon-container">
           <a href="https://chat.whatsapp.com/HnJIXbjwK2wLvG0vDxSEsR">

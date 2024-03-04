@@ -31,3 +31,40 @@
     justify-items: center;
     align-items: center;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+            height: 800px;
+            display: grid;
+            grid-template-rows: 20% 80%;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+    
+        .contact-container h1 {
+            font-size: 50px;
+        }
+    
+        .icon {
+            height: 80px;
+            width: 80px;
+        }
+    
+        .second-row-contact {
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            align-items: center;
+            justify-items: center;
+        }
+    
+        .icon-container {
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+}

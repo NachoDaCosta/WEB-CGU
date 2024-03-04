@@ -4,7 +4,9 @@ const Nosotros = () => {
   return (
     <div className="nosotros-container" id="nosotros">
       <div className="left-column-about">
-        <h1>Quienes Somos?</h1>
+        <div className="quienes-somos">
+          <h1>Quienes Somos?</h1>
+        </div>
         <div className="text">
           Somos CGU FING Corriente Gremial Universitaria en Facultad de
           Ingeniería. Buscamos empoderar a los estudiantes a través de la
@@ -23,7 +25,7 @@ const Nosotros = () => {
           de manera significativa a la sociedad.
         </div>
       </div>
-      <div>
+      <div className="imagen-nosotros">
         <img alt=" " src="./imgs/nosotros.webp" className="us-pic" />
       </div>
     </div>

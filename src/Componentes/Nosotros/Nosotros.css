@@ -1,5 +1,5 @@
 .nosotros-container{
-    background-color: rgb(23, 33, 94);
+    background-image: url("../../../public/imgs/cgu-varios.jpg");
     color: white;
     height: 500px;
     display: grid;
@@ -20,14 +20,102 @@
 
 
 .us-pic{
+    border-radius: 20px;
     width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 50px 70px 4px;
 }
 
 .text{
+    background-color: rgba(255, 255, 255,0.9);
+    border-radius: 20px;
+    padding: 20px;
     text-align: center;
     display: flex;
     width: 80%;
     text-align: justify;
-    font-size:18px;
+    font-size:20px;
+    color: rgb(23, 33, 94);
+    border: 2px solid rgb(23, 33, 94);
+}
+
+
+.quienes-somos{
+    color: rgb(23, 33, 94);;
+    border: 2px solid rgb(23, 33, 94);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.imagen-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .nosotros-container {
+        background-image: url("../../../public/imgs/cgu-varios.jpg");
+        background-repeat: repeat;
+        color: white;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-content: center;
+
+    }
+
+    .left-column-about {
+        height: 1000px;
+        display: grid;
+        gap: 20px;
+        grid-template-rows: 20% 80%;
+        align-content: center;
+        justify-items: center;
+    }
+
+
+
+    .us-pic {
+        border-radius: 20px;
+        width: 370px;
+    }
+
+    .text {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        width: 80%;
+        text-align: justify;
+        height: 700px;
+        font-size: 20px;
+        color: rgb(23, 33, 94);
+        border: 2px solid rgb(23, 33, 94);
+    }
+
+
+    .quienes-somos {
+        color: rgb(23, 33, 94);
+        ;
+        border: 2px solid rgb(23, 33, 94);
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .imagen-nosotros {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
