@@ -1,5 +1,5 @@
 .nosotros-container{
-    background-image: url("../../../public/imgs/cgu-varios.jpg");
+    background-image: url("../../../public/imgs/cgu-varios.webp");
     color: white;
     height: 500px;
     display: grid;
@@ -58,7 +58,7 @@
 
 @media only screen and (max-width: 768px) {
     .nosotros-container {
-        background-image: url("../../../public/imgs/cgu-varios.jpg");
+        background-image: url("../../../public/imgs/cgu-varios.webp");
         background-repeat: repeat;
         color: white;
         height: 1300px;

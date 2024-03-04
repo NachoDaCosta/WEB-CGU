@@ -10,7 +10,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("CDIV")}
         >
-          <img src="/imgs/c1.png" alt="" />
+          <img src="/imgs/c1.webp" alt="" />
           <span>CDIV</span>
         </div>
 
@@ -18,7 +18,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("CDIVV")}
         >
-          <img src="/imgs/c2.png" alt="" />
+          <img src="/imgs/c2.webp" alt="" />
           <span>CDIVV</span>
         </div>
 
@@ -26,7 +26,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("CALCULO VECTORIAL")}
         >
-          <img src="/imgs/c3.png" alt="" />
+          <img src="/imgs/c3.webp" alt="" />
           <span>Calc Vectorial</span>
         </div>
 
@@ -34,7 +34,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("FISICA 1")}
         >
-          <img src="/imgs/f1.png" alt="" />
+          <img src="/imgs/f1.webp" alt="" />
           <span>Fisica 1</span>
         </div>
 
@@ -42,7 +42,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("FISICA 2")}
         >
-          <img src="/imgs/f2.png" alt="" />
+          <img src="/imgs/f2.webp" alt="" />
           <span>Fisica 2</span>
         </div>
 
@@ -50,14 +50,14 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("GAL 1")}
         >
-          <img src="/imgs/g1.png" alt="" />
+          <img src="/imgs/g1.webp" alt="" />
           <span>Gal 1</span>
         </div>
         <div
           className="materia-info"
           onClick={() => mostrarInformacionMateria("GAL 2")}
         >
-          <img src="/imgs/g2.png" alt="" />
+          <img src="/imgs/g2.webp" alt="" />
           <span>Gal 2</span>
         </div>
 
@@ -65,7 +65,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("MATEMATICA DISCRETA 1")}
         >
-          <img src="/imgs/m1.png" alt="" />
+          <img src="/imgs/m1.webp" alt="" />
           <span>Matematica Discreta 1</span>
         </div>
 
@@ -73,7 +73,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("MATEMATICA DISCRETA 2")}
         >
-          <img src="/imgs/m2.png" alt="" />
+          <img src="/imgs/m2.webp" alt="" />
           <span>Matematica Discreta 2</span>
         </div>
 
@@ -81,7 +81,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("PROGRAMACION 1")}
         >
-          <img src="/imgs/p1.png" alt="" />
+          <img src="/imgs/p1.webp" alt="" />
           <span>Programación 1</span>
         </div>
 
@@ -89,14 +89,14 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("PROGRAMACION 2")}
         >
-          <img src="/imgs/p2.png" alt="" />
+          <img src="/imgs/p2.webp" alt="" />
           <span>Programación 2</span>
         </div>
         <div
           className="materia-info"
           onClick={() => mostrarInformacionMateria("MATEMATICA INICIAL")}
         >
-          <img src="/imgs/mi.png" alt="" />
+          <img src="/imgs/mi.webp" alt="" />
           <span>Matematica Inicial</span>
         </div>
       </div>
