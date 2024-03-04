@@ -1,14 +1,14 @@
 /* Materias.css */
 .materias {
-    display: flex;
-    height: 900px;
-    flex-direction: column;
+    display: grid;
+    height: 1200px;
+    grid-template-rows: 15% 40% 40%;
     align-items: center;
     justify-items: center;
-    gap: 50px;
 }
 
 .materias h1 {
+    margin-top: 50px;
     font-size: 45px;
 }
 
@@ -22,6 +22,22 @@
     flex-wrap: wrap;
     gap: 25px;
     width: 60%;
+}
+
+.mats A:link {
+    text-decoration: none
+}
+
+.mats A:visited {
+    color: black;
+    font-family: arial;
+    text-decoration: none
+}
+
+.mats A:hover {
+    color: black;
+    font-family: arial;
+    text-decoration: none
 }
 
 .materia-info {
@@ -84,6 +100,7 @@
 
     .materias h1 {
         font-size: 45px;
+        color: black;
     }
 
     .materias img {
@@ -99,6 +116,22 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .mats   A:link {
+        text-decoration: none
+    }
+
+        .mats A:visited {
+        color: black;
+        font-family: arial;
+        text-decoration: none
+    }
+
+        .mats  A:hover {
+        color: black;
+        font-family: arial;
+        text-decoration: none
     }
 
     .materia-info {
