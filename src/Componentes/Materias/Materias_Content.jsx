@@ -57,7 +57,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
           className="materia-info"
           onClick={() => mostrarInformacionMateria("GAL 2")}
         >
-          <img src="/imgs/G2.png" alt="" />
+          <img src="/imgs/g2.png" alt="" />
           <span>Gal 2</span>
         </div>
 
