@@ -61,7 +61,7 @@
         background-image: url("../../../public/imgs/cgu-varios.webp");
         background-repeat: repeat;
         color: white;
-        height: 1300px;
+        height: 1600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,14 +71,13 @@
     }
 
     .left-column-about {
-        height: 1000px;
         display: grid;
         gap: 20px;
+        height: 1200px;
         grid-template-rows: 20% 80%;
         align-content: center;
         justify-items: center;
     }
-
 
 
     .us-pic {

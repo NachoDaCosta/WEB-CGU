@@ -25,7 +25,8 @@
 }
 
 .mats A:link {
-    text-decoration: none
+    text-decoration: none;
+    color:black;
 }
 
 .mats A:visited {
