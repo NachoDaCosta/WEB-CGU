@@ -1,5 +1,7 @@
 .nosotros-container{
-    background-image: url("../../../public/imgs/cgu-varios.webp");
+    background-image: url(../../../public/imgs/fondo-materias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     height: 500px;
     display: grid;
@@ -21,7 +23,7 @@
 
 .us-pic{
     border-radius: 20px;
-    width: 500px;
+    width: 700px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 50px 70px 4px;
 }
 
@@ -58,8 +60,7 @@
 
 @media only screen and (max-width: 768px) {
     .nosotros-container {
-        background-image: url("../../../public/imgs/cgu-varios.webp");
-        background-repeat: repeat;
+        background-image: url(../../../public/imgs/fondo-materias.png);
         color: white;
         height: 1600px;
         display: flex;

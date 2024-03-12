@@ -1,5 +1,6 @@
 /* Materias.css */
 .materias {
+    
     display: grid;
     height: 1200px;
     grid-template-rows: 15% 40% 40%;

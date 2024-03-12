@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <div>
-        <img src="./imgs/logo-cgu.jpg" alt="" className="logo" />
+        <img src="./imgs/cgu-logo.webp" alt="" className="logo" />
       </div>
       <h1>CGU INGENIERÍA</h1>
       <h1>LA FING ESTÁ CAMBIANDO</h1>

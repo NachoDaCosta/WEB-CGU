@@ -14,10 +14,10 @@ function App() {
       <Header />
       <Nav />
       <Materias />
+      <Mapa />
       <Nosotros />
       <Actividades />
       <Contact />
-      <Mapa />
       <Footer />
     </div>
   );
