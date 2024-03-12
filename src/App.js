@@ -19,6 +19,15 @@ function App() {
       <Contact />
       <Mapa />
       <Footer />
+      <div className="descarga">
+        <span>Descargar</span>
+        <a
+          href="/C:/Proyectos/Web-CGU/cgu/public/Docs/entrada.pdf"
+          download="entrada.pdf"
+        >
+          <button>Descargar Archivo</button>
+        </a>
+      </div>
     </div>
   );
 }
