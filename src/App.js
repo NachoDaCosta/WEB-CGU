@@ -6,6 +6,7 @@ import Header from "./Componentes/Header/Header";
 import Materias from "./Componentes/Materias/Materias";
 import Nav from "./Componentes/Nav/Nav";
 import Nosotros from "./Componentes/Nosotros/Nosotros";
+import Mapa from "./Componentes/mapa/Mapa";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Nosotros />
       <Actividades />
       <Contact />
+      <Mapa />
       <Footer />
     </div>
   );
