@@ -11,6 +11,7 @@ import Mapa from "./Componentes/mapa/Mapa";
 function App() {
   return (
     <div className="container-app">
+      <img alt="" src="./imgs/cgu-logo.webp"  className="logo-attached"/>
       <Header />
       <Nav />
       <Materias />
