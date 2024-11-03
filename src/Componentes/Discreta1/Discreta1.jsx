@@ -154,7 +154,7 @@ const Discreta1 = () => {
       </div>
 
       <span>
-        IMPORTANTE: tanto (n,r) deben ser menores a 1000 porque sino no funciona
+        IMPORTANTE: tanto (n,r) deben ser menores a 100 porque sino no funciona
         por memoria
       </span>
     </div>
