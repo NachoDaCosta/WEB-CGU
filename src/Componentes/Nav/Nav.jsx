@@ -4,20 +4,7 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <a href="#nosotros">SOBRE NOSOTROS</a>
-        </li>
-        <li>
-          <a href="#contacto">CONTACTO</a>
-        </li>
-        <li>
-          <a href="https://eva.fing.edu.uy/">EVA</a>
-        </li>
-        <li>
-          <a href="https://open.fing.edu.uy/">OPENFING</a>
-        </li>
-      </ul>
+      <h1>Dándote una mano con Discreta 1</h1>
     </nav>
   );
 };

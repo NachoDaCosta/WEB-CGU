@@ -4,9 +4,11 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p>
-        &copy; 2024 Recursos para Estudiantes. Todos los derechos reservados.
-      </p>
+      <div>&copy; Hecho por Nacho Da Costa v0.1</div>
+      <div className="trabajo">
+        <div>Si sabes react y quieres ayudar</div>
+        <img alt="logo-wpp-footer" src="./imgs/whatsapp.webp" />
+      </div>
     </footer>
   );
 };

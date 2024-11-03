@@ -1,0 +1,251 @@
+/*-------------PC--------------*/
+@media (min-width: 1024px) {
+    /* Oculta los controles de los inputs tipo number */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            /* Chrome y Safari */
+            margin: 0;
+            /* Elimina márgenes */
+        }
+    
+        input[type="number"] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+.discreta1-container {
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        font-size: 30px;
+    }
+
+    .ipnut-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .ipnut-container input {
+        font-size: 20px;
+        width: 100px;
+        border: 3px solid #44749d;
+        border-radius: 40px;
+        text-align: center;
+        height: 60px;
+    }
+
+    .calcular {
+        font-size: 20px;
+        width: 150px;
+        height: 70px;
+        border: 3px solid #44749d;
+        border-radius: 40px;
+        background-color: #c6d4e1;
+        text-align: center;
+        color: black;
+    }
+    .calcular:hover {
+        cursor: pointer;
+        /* Cambia a un cursor de puntero */
+        background-color: #dbe5ee;
+        /* Cambia el color de fondo al hacer hover */
+    }
+
+    .resultados {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .discreta1-container span {
+        color: #44749d;
+        font-weight: bolder;
+    }
+
+    .info-resultados {
+        width: 100%;
+        display: flex;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fill {
+        width: 100%;
+    }
+}
+
+
+/*-------------CELU--------------*/
+@media only screen and (max-width: 768px) {
+    /* Oculta los controles de los inputs tipo number */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            /* Chrome y Safari */
+            margin: 0;
+            /* Elimina márgenes */
+        }
+    
+        input[type="number"] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+    .discreta1-container {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .ipnut-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .ipnut-container input{
+        width: 40px;
+        border:  2px solid #44749d;
+        border-radius: 10px;
+        text-align: center;
+        height: 30px;
+    }
+
+    .calcular{
+        width: 150px;
+        height: 30px;
+        border: 2px solid #44749d;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;    
+    }
+
+    .resultados{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .discreta1-container span{
+        color:#44749d;
+        font-weight: bolder;
+    }
+
+    .info-resultados{
+        width: 100%;
+        display: flex;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fill{
+        width: 100%;
+    }
+}
+
+
+/*----------------tablet------------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Oculta los controles de los inputs tipo number */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            /* Chrome y Safari */
+            margin: 0;
+            /* Elimina márgenes */
+        }
+    
+        input[type="number"] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+    .discreta1-container {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .ipnut-container {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .ipnut-container input {
+        width: 70px;
+        border: 2px solid #44749d;
+        border-radius: 10px;
+        text-align: center;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .calcular {
+        width: 200px;
+        height: 50px;
+        border: 2px solid #44749d;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+        font-size: 20px;
+    }
+
+    .resultados {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size:25px ;
+    }
+
+    .discreta1-container span {
+        color:#44749d;
+        font-weight: bolder;
+    }
+
+    .info-resultados {
+        width: 100%;
+        display: flex;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fill {
+        width: 100%;
+    }
+
+
+}
