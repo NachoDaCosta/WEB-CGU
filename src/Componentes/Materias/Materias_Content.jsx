@@ -5,10 +5,9 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [materiasFiltradas, setMateriasFiltradas] = useState([]);
 
-  // Lista de todas las materias
   const materias = [
-    { nombre: "CALCULO 1", imagen: "/imgs/c1.webp" },
-    { nombre: "CALCULO 2", imagen: "/imgs/c2.webp" },
+    { nombre: "CDIV", imagen: "/imgs/c1.webp" },
+    { nombre: "CDIVV", imagen: "/imgs/c2.webp" },
     { nombre: "CALCULO VECTORIAL", imagen: "/imgs/c3.webp" },
     { nombre: "FISICA 1", imagen: "/imgs/f1.webp" },
     { nombre: "FISICA 2", imagen: "/imgs/f2.webp" },
@@ -21,7 +20,6 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
     { nombre: "MATEMATICA INICIAL", imagen: "/imgs/mi.webp" },
   ];
 
-  // Filtrar materias cuando cambia el término de búsqueda
   useEffect(() => {
     const materiasFiltradas = materias.filter((materia) =>
       materia.nombre.toLowerCase().includes(searchTerm.toLowerCase())
@@ -32,6 +30,12 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
   const handleMateriaClick = (materia) => {
     setSelected(true);
     mostrarInformacionMateria(materia);
+
+    // Desplazamiento suave a la sección de información
+    const infoSection = document.getElementById("infoSection");
+    if (infoSection) {
+      infoSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const handleSearchInput = (event) => {
@@ -42,7 +46,6 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
     <div className="materias">
       <h1>Materias</h1>
 
-      {/* Campo de entrada para la búsqueda */}
       <input
         type="text"
         placeholder="Buscar materia por nombre"
@@ -68,7 +71,7 @@ const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
         )}
       </div>
 
-      <div className="infoContainer">
+      <div className="infoContainer" id="infoSection">
         {!selected ? (
           <div className="haz-click">
             HAZ CLICK EN UNA MATERIA O USA EL BUSCADOR PARA VER SU INFORMACIÓN
