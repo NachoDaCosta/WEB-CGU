@@ -1,117 +1,77 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Materias2 = ({ infoMateria, mostrarInformacionMateria }) => {
-  const [selected, setSelected] = useState(false); // Estado para verificar si se ha seleccionado una materia
+  const [selected, setSelected] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [materiasFiltradas, setMateriasFiltradas] = useState([]);
+
+  // Lista de todas las materias
+  const materias = [
+    { nombre: "CALCULO 1", imagen: "/imgs/c1.webp" },
+    { nombre: "CALCULO 2", imagen: "/imgs/c2.webp" },
+    { nombre: "CALCULO VECTORIAL", imagen: "/imgs/c3.webp" },
+    { nombre: "FISICA 1", imagen: "/imgs/f1.webp" },
+    { nombre: "FISICA 2", imagen: "/imgs/f2.webp" },
+    { nombre: "GAL 1", imagen: "/imgs/g1.webp" },
+    { nombre: "GAL 2", imagen: "/imgs/g2.webp" },
+    { nombre: "MATEMATICA DISCRETA 1", imagen: "/imgs/m1.webp" },
+    { nombre: "MATEMATICA DISCRETA 2", imagen: "/imgs/m2.webp" },
+    { nombre: "PROGRAMACION 1", imagen: "/imgs/p1.webp" },
+    { nombre: "PROGRAMACION 2", imagen: "/imgs/p2.webp" },
+    { nombre: "MATEMATICA INICIAL", imagen: "/imgs/mi.webp" },
+  ];
+
+  // Filtrar materias cuando cambia el término de búsqueda
+  useEffect(() => {
+    const materiasFiltradas = materias.filter((materia) =>
+      materia.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setMateriasFiltradas(materiasFiltradas);
+  }, [searchTerm]);
 
   const handleMateriaClick = (materia) => {
-    setSelected(true); // Cambia el estado a true cuando se hace clic en una materia
-    mostrarInformacionMateria(materia); // Llama a la función para mostrar la información
+    setSelected(true);
+    mostrarInformacionMateria(materia);
+  };
+
+  const handleSearchInput = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   return (
     <div className="materias">
       <h1>Materias</h1>
 
+      {/* Campo de entrada para la búsqueda */}
+      <input
+        type="text"
+        placeholder="Buscar materia por nombre"
+        value={searchTerm}
+        onChange={handleSearchInput}
+        className="search-input"
+      />
+
       <div className="mats">
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("CDIV")}
-        >
-          <img src="/imgs/c1.webp" alt="" />
-          <span>CDIV</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("CDIVV")}
-        >
-          <img src="/imgs/c2.webp" alt="" />
-          <span>CDIVV</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("CALCULO VECTORIAL")}
-        >
-          <img src="/imgs/c3.webp" alt="" />
-          <span>Calc Vectorial</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("FISICA 1")}
-        >
-          <img src="/imgs/f1.webp" alt="" />
-          <span>Fisica 1</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("FISICA 2")}
-        >
-          <img src="/imgs/f2.webp" alt="" />
-          <span>Fisica 2</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("GAL 1")}
-        >
-          <img src="/imgs/g1.webp" alt="" />
-          <span>Gal 1</span>
-        </div>
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("GAL 2")}
-        >
-          <img src="/imgs/g2.webp" alt="" />
-          <span>Gal 2</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("MATEMATICA DISCRETA 1")}
-        >
-          <img src="/imgs/m1.webp" alt="" />
-          <span>Matematica Discreta 1</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("MATEMATICA DISCRETA 2")}
-        >
-          <img src="/imgs/m2.webp" alt="" />
-          <span>Matematica Discreta 2</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("PROGRAMACION 1")}
-        >
-          <img src="/imgs/p1.webp" alt="" />
-          <span>Programación 1</span>
-        </div>
-
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("PROGRAMACION 2")}
-        >
-          <img src="/imgs/p2.webp" alt="" />
-          <span>Programación 2</span>
-        </div>
-        <div
-          className="materia-info"
-          onClick={() => handleMateriaClick("MATEMATICA INICIAL")}
-        >
-          <img src="/imgs/mi.webp" alt="" />
-          <span>Matematica Inicial</span>
-        </div>
+        {materiasFiltradas.length > 0 ? (
+          materiasFiltradas.map((materia) => (
+            <div
+              key={materia.nombre}
+              className="materia-info"
+              onClick={() => handleMateriaClick(materia.nombre)}
+            >
+              <img src={materia.imagen} alt={materia.nombre} />
+              <span>{materia.nombre}</span>
+            </div>
+          ))
+        ) : (
+          <div>No se encontraron materias</div>
+        )}
       </div>
 
       <div className="infoContainer">
         {!selected ? (
           <div className="haz-click">
-            HAZ CLICK EN UNA MATERIA PARA VER SU INFORMACIÓN
+            HAZ CLICK EN UNA MATERIA O USA EL BUSCADOR PARA VER SU INFORMACIÓN
           </div>
         ) : (
           <>

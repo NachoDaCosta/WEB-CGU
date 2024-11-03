@@ -16,9 +16,6 @@ const Materias = () => {
     // Simulación de información detallada. Puedes obtener esta información desde una fuente externa.
     setInfoMateria({
       nombre: nombreMateria,
-      detalles: `Créditos: ${nombreMateria.length}, Horas por semana: ${
-        nombreMateria.length * 2
-      }, Enlace a clases virtuales: [Enlace]`,
       creditos: obtenerCreditosMateria(nombreMateria),
       linkClases: obtenerLinkClasesMateria(nombreMateria),
     });
@@ -26,9 +23,9 @@ const Materias = () => {
 
   const obtenerCreditosMateria = (nombreMateria) => {
     switch (nombreMateria) {
-      case "CDIV":
+      case "CALCULO 1":
         return 13;
-      case "CDIVV":
+      case "CALCULO 2":
         return 13;
       case "CALCULO VECTORIAL":
         return 10;
@@ -54,14 +51,13 @@ const Materias = () => {
     }
   };
 
-
   const obtenerLinkClasesMateria = (nombreMateria) => {
     // Simulación de información. Puedes ajustar esto según tus necesidades.
     switch (nombreMateria) {
-      case "CDIV":
+      case "CALCULO 1":
         return "https://open.fing.edu.uy/courses/civ/";
 
-      case "CDIVV":
+      case "CALCULO 2":
         return "https://open.fing.edu.uy/courses/cdivv-2022/";
 
       case "CALCULO VECTORIAL":
